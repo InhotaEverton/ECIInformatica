@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Completo - ECI Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> <!-- Incluindo o arquivo de script externo -->
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>ECI Informática</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cadastro.html" id="cadastro">Cadastro</a></li>
+                <li><a href="listadecadastro.html" id="cadastro">Lista de Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cadastro-completo">
+            <h3>Cadastre-se para um orçamento</h3>
+            <p><b>Preencha os dados abaixo para completar seu cadastro.</b></p>
+
+            <form id="form-cadastro" action="#" method="post" onsubmit="salvarCadastro(); return false;">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="nome-empresa">Segmento da Empresa</label>
+                <input type="text" id="nome-empresa" name="nome-empresa" placeholder="Segmento da Empresa" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Seu endereço" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado" placeholder="Seu estado" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ECI Informática. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
